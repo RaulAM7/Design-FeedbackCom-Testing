@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback.com</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .side-panel {
+            flex: 1;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .alert-box {
+            background-color: #e0f7fa;
+            border: 1px solid #b2dfdb;
+            color: #00796b;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .filter-buttons button,
+        .create-post {
+            background-color: #2CD8D5;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .post {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .planned {
+            background-color: #e0f7fa;
+            color: #00796b;
+        }
+
+        .priority {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .review {
+            background-color: #fff3e0;
+            color: #ef6c00;
+        }
+
+        .panel-button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background-color: #ffffff;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .panel-button:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>💡Feedback.com💡</h1>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="alert-box">
+                Leave your bug reports, ideas, and feedback here. Please remember to LOG-IN to do this.
+            </div>
+
+            <div class="filter-buttons">
+                <button>Best Posts 🔟</button>
+                <button>New Posts 🆕</button>
+                <button>Trendy🔥</button>
+                <button class="create-post">Create new post</button>
+            </div>
+
+            <div class="post">
+                <span class="tag planned">Planned</span>
+                <h3>Title 1</h3>
+                <p><strong>Project 1</strong> | 14 days ago</p>
+                <p>Details of the post content...</p>
+            </div>
+
+            <div class="post">
+                <span class="tag priority">Priority</span>
+                <h3>Title 2</h3>
+                <p><strong>Project 2</strong> | 15 days ago</p>
+                <p>Details of the post content...</p>
+            </div>
+        </div>
+
+        <div class="side-panel">
+            <h3>Panels</h3>
+            <button class="panel-button">View all posts</button>
+            <button class="panel-button">Project 1</button>
+            <button class="panel-button">Project 1</button>
+            <button class="panel-button">Project 1</button>
+            <button class="panel-button">Project 1</button>
+            <button class="panel-button">Project 1</button>
+            <button class="panel-button">Project 1</button>
+            <button class="panel-button">Project 1</button>
+            <button class="panel-button">Project 1</button>
+            <button class="panel-button">Project 1</button>
+            <button class="panel-button">Other link</button>
+            <button class="panel-button">Direct Feedback for @creator</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

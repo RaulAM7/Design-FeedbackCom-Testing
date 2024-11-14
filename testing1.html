@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback.com</title>
+    <style>
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .side-panel {
+            flex: 1;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .alert-box {
+            background-color: #fbe9e9;
+            border: 1px solid #f2b6b6;
+            color: #c41a1a;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .filter-buttons button,
+        .create-post {
+            background-color: #ff3860;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .post {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .planned {
+            background-color: #e0f7fa;
+            color: #00796b;
+        }
+
+        .priority {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .review {
+            background-color: #fff3e0;
+            color: #ef6c00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>💡Feedback.com💡</h1>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="alert-box">
+                👉👉👉👉Leave your bug reports, ideas and feedback here. Please remember to LOG-IN order to do this.
+            </div>
+
+            <div class="filter-buttons">
+                <button>Best Posts 🔟</button>
+                <button>New Posts 🆕</button>
+                <button>Trendy🔥</button>
+                <button class="create-post">Create new post</button>
+            </div>
+
+            <div class="post">
+                <span class="tag planned">Planned</span>
+                <h3>Title 1</h3>
+                <p><strong>Project 1</strong> | 14 days ago</p>
+                <p>Details of the post content...</p>
+            </div>
+
+            <div class="post">
+                <span class="tag priority">Priority</span>
+                <h3>Title 2</h3>
+                <p><strong>Project 2</strong> | 15 days ago</p>
+                <p>Details of the post content...</p>
+            </div>
+        </div>
+
+        <div class="side-panel">
+            <h3>Panels</h3>
+            <ul>
+                <li>View all posts</li>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+                <!-- More panel items... -->
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
