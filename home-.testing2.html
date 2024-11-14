@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback.com - Centralize Your Feedback</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header-buttons a {
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #2CD8D5;
+            color: #ffffff;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .header-buttons a:hover {
+            background-color: #28b5b3;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .hero .cta-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cta-buttons a {
+            text-decoration: none;
+            padding: 12px 25px;
+            background-color: #2CD8D5;
+            color: #ffffff;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #28b5b3;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+        }
+
+        .feature {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .feature h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .feature p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .testimonial-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+
+        .testimonial {
+            font-style: italic;
+            color: #333;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .testimonial::before,
+        .testimonial::after {
+            content: '"';
+            font-size: 24px;
+            color: #2CD8D5;
+        }
+
+        .faq-section {
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .faq-item {
+            margin-top: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-title">💡Feedback.com💡</div>
+        <div class="header-buttons">
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Centralize Your Feedback Gathering</h1>
+        <p>Empower your project with direct feedback from your users. Engage, listen, and grow your community.</p>
+        <div class="cta-buttons">
+            <a href="/register">Get Started</a>
+            <a href="#features">Learn More</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature">
+            <h3>Embed a Feedback Button</h3>
+            <p>Instantly add a feedback button to your website, connecting you with your users in one click.</p>
+        </div>
+        <div class="feature">
+            <h3>Manage Ideas and Bugs</h3>
+            <p>Get all your user feedback, ideas, and bug reports organized in one place for easy access and management.</p>
+        </div>
+        <div class="feature">
+            <h3>Community Voting</h3>
+            <p>Let your users vote on ideas and bugs, so you can prioritize improvements that matter the most.</p>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="testimonial">
+            Feedback.com has transformed how we gather feedback.
+            <br>
+            <br>
+            Our users now feel directly involved in our product's
+            growth, and we've been able to address key issues faster and more effectively than ever before.
+            <br>
+            <br>Simply put: Feedback.com is brilliant
+            <br>
+            <br>— Jane Doe, Product Manager at Reboot Academy
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <div class="faq-item">Can I customize the feedback button?</div>
+            <div class="faq-item">Is there a limit on the number of feedback posts I can receive?</div>
+            <div class="faq-item">How does voting work on feedback and bug reports?</div>
+            <div class="faq-item">Is Feedback.com secure for handling sensitive information?</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Feedback.com - All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
