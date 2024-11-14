@@ -168,6 +168,78 @@
             color: #666;
             border-top: 1px solid #ddd;
         }
+        .feedback-button-generator {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #ffffff;
+        margin-top: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .feedback-button-generator h2 {
+        font-size: 26px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .feedback-button-generator p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .generator-interface {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .code-preview {
+        width: 100%;
+        background-color: #333;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: monospace;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .code-preview h3 {
+        font-size: 18px;
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+
+    .code-preview pre {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .generate-button {
+        padding: 12px 20px;
+        background-color: #2CD8D5;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .generate-button:hover {
+        background-color: #28b5b3;
+    }
     </style>
 </head>
 
@@ -194,17 +266,34 @@
     <section class="features" id="features">
         <div class="feature">
             <h3>Embed a <span style="color:#2CD8D5">Feedback Button</span></h3>
-            <p>Instantly add a feedback button to your website, connecting you with your users in one click.</p>
+            <p>Instantly <strong>add a feedback button</strong> to your website, <strong>connecting</strong> you with your users in <strong>one click.</strong></p>
         </div>
         <div class="feature">
             <h3><span style="color:#2CD8D5">Manage Ideas</span> and Bugs</h3>
-            <p>Get all your user feedback, ideas, and bug reports organized in one place for easy access and management.</p>
+            <p>Get <strong>all your user feedback</strong>, ideas, and bug reports <strong>organized in one place</strong> for easy access and management.</p>
         </div>
         <div class="feature">
-            <h3><span style="color:#2CD8D5">Community</span> Voting</h3>
+            <h3><span style="color:#2CD8D5">Community</span> Building</h3>
             <p>Let your users vote on ideas and bugs, so you can prioritize improvements that matter the most.</p>
         </div>
     </section>
+
+    <section class="feedback-button-generator">
+    <h2>Hey, hey, hey, wait a minute...
+        What's a <span style="color:#2CD8D5;">"Feedback Button"</span>?</h2>
+    <p>With just one click, generate the HTML code for your <strong>Feedback Button</strong>.
+    <br>
+    <br> 
+    Add it to your website or app to create an instant feedback channel between you and your users!</p>
+    <div class="generator-interface">
+        <div class="code-preview">
+            <h3>Your Feedback Button Code</h3>
+            <pre><code>&lt;a href="https://feedback.com/yourproject" target="_blank"&gt;Feedback Button&lt;/a&gt;</code></pre>
+        </div>
+        <button class="generate-button">Copy Code</button>
+    </div>
+    </section>
+
 
     <section class="testimonial-section">
         <div class="testimonial">
