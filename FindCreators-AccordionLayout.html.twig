@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Find Creators
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<h1 class="title">Find Creators</h1>
+		<div class="accordion">
+			{% for creator in creators if creator.getIsCreator() %}
+				<div class="accordion-item">
+					<h2 class="accordion-title">{{ creator.name }}</h2>
+					<div class="accordion-content">
+						<p>Username:
+							{{ creator.username ?: 'Unknown Username' }}</p>
+						<p>Email:
+							{{ creator.getEmail() }}</p>
+						<p>{{ creator.email }}
+							has
+							{{ creator.projectsOwned|length }}
+							projects and
+							{{ creator.postsIncluded|length }}
+							posts.</p>
+						<a href="{{ path('creator_profile', { id: creator.id }) }}" class="read-more">Read more</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<style>
+		.container {
+			max-width: 800px;
+			margin: auto;
+			padding: 20px;
+		}
+		.title {
+			text-align: center;
+			font-size: 2em;
+			margin-bottom: 20px;
+		}
+		.accordion-item {
+			background: #ffffff;
+			border-radius: 8px;
+			margin-bottom: 10px;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		}
+		.accordion-title {
+			padding: 15px;
+			cursor: pointer;
+		}
+		.accordion-content {
+			display: none;
+			padding: 15px;
+		}
+		.accordion-title:hover + .accordion-content,
+		.accordion-title:focus + .accordion-content {
+			display: block;
+		}
+		.read-more {
+			color: #2CD8D5;
+			text-decoration: none;
+		}
+		.read-more:hover {
+			text-decoration: underline;
+		}
+	</style>
+
+	<script>
+		document.querySelectorAll('.accordion-title').forEach(title => {
+title.addEventListener('click', () => {
+const content = title.nextElementSibling;
+content.style.display = content.style.display === 'block' ? 'none' : 'block';
+});
+});
+	</script>
+{% endblock %}
+
